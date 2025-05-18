@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import HeadingDescription from "./HeadingDescription";
-import LookUp from "@/app/_data/LookUp";
+import Lookup from "@/app/_data/Lookup";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SignInButton, useUser } from "@clerk/nextjs";
@@ -18,12 +18,12 @@ const PricingModel = ({ formData }) => {
   return (
     <div className="">
       <HeadingDescription
-        title={LookUp.LogoPricingModelTitle}
-        description={LookUp.LogoPricingModelDesc}
+        title={Lookup.LogoPricingModelTitle}
+        description={Lookup.LogoPricingModelDesc}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
-        {LookUp.pricingOption.map((pricing, index) => (
+        {Lookup.pricingOption.map((pricing, index) => (
           <div
             key={index}
             className="flex flex-col items-center p-5 border rounded-xl"
